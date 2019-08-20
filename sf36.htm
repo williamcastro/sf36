@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>SF36 - Sistema por William Castro</title>
+
+<script type="text/javascript" src="inc/jquery-min.js"></script>
+<script type="text/javascript" src="inc/sf36.js"></script>
+<link href="inc/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="pagina">
+    <div id="formulario">
+		
+        <h4>SF36</h4><br />
+        <h2>1. Em geral, voc&ecirc; diria que sua sa&uacute;de &eacute;: </h2>
+          
+          <br />
+        <form id="formulario-perguntas" name="formulario-perguntas" method="post" action="">
+              <table width="100%" border="0" cellpadding="6" cellspacing="1">
+                <tr id="L_Q01L01" class="even">
+                  <td width="63%" class="border-line">Excelente</td>
+                  <td width="37%" align="center" valign="middle" class="border-line"><input name="Q01L01" type="radio" id="Q01L01_0" value="5.0" /></td>
+                </tr>
+                <tr>
+                  <td class="border-line">Muito boa</td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q01L01" value="4.4" id="Q01L02_0" /></td>
+                </tr>
+                <tr class="even">
+                  <td class="border-line">Boa</td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q01L01" value="3.4" id="Q01L03_0" /></td>
+                </tr>
+                <tr>
+                  <td class="border-line">Ruim</td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q01L01" value="2" id="Q01L04_0" /></td>
+                </tr>
+                <tr class="even">
+                  <td class="border-line">Muito Ruim</td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q01L01" value="1" id="Q01L05_0" /></td>
+                </tr>
+              </table>
+              <br />
+              <h2>2. Comparada a um ano atr&aacute;s, como voc&ecirc; classificaria sua sa&uacute;de em geral agora:</h2>
+              <br />
+              <table width="100%" border="0" cellpadding="6" cellspacing="1">
+                <tr class="border-line even" id="L_Q02L01">
+                  <td width="63%" align="left" valign="middle" class="border-line">Muito melhor agora do que a um ano atr&aacute;s</td>
+                  <td width="37%" align="center" valign="middle" class="border-line"><input name="Q02L01" type="radio" 	id="Q02L01_0" value="5" /></td>
+                </tr>
+                <tr class="border-line" id="L_Q02L01">
+                  <td align="left" valign="middle" class="border-line">Um pouco melhor agora do que um ano atr&aacute;s</td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q02L01" value="4.4" 	id="Q02L01_0" /></td>
+                </tr>
+                <tr class="border-line even" id="L_Q02L01">
+                  <td align="left" valign="middle" class="border-line">Quase a mesma de que a um ano atr&aacute;s</td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q02L01" value="3.4" 	id="Q02L01_0" /></td>
+                </tr>
+                <tr class="border-line" id="L_Q02L01">
+                  <td align="left" valign="middle" class="border-line">Um pouco pior agora do que a um ano atr&aacute;s</td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q02L01" value="2" 	id="Q02L01_0" /></td>
+                </tr>
+                <tr class="border-line even" id="L_Q02L01">
+                  <td align="left" valign="middle" class="border-line">Muito pior agora do que a um ano atr&aacute;s</td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q02L01" value="1" 	id="Q02L01_0" /></td>
+                </tr>
+              </table>
+<br />
+              <h2>3. Os seguintes itens s&atilde;o sobre atividades que voc&ecirc; poderia fazer atualmetne durante um dia comum. Devido a sua sa&uacute;de, voc&ecirc; tem dificuldade para fazer essas atividades? Neste caso quanto?</h2>
+              <br />
+              
+              <table width="100%" border="0" cellpadding="6" cellspacing="1">
+                <tr>
+                  <td width="62%" align="center" valign="middle" class="table-top">ATIVIDADES</td>
+                  <td width="11%" align="center" valign="middle" class="table-top">SIM DIFICULTA MUITO</td>
+                  <td width="11%" align="center" valign="middle" class="table-top">SIM DIFICULTA UM POUCO</td>
+                  <td width="16%" align="center" valign="middle" class="table-top">N&Atilde;O. N&Atilde;O DIFICULTA DE MODO ALGUM</td>
+                </tr>
+                <tr class="border-line even" id="L_Q03L01">
+                  <td align="left" valign="middle" class="border-line">A) <b>Atividades vigorosas</b>, que exigem muito esfor&ccedil;o tais como correr, levantar objetos pesados, participar em esportes &aacute;rduos.</td>
+                  <td align="center" valign="middle" class="border-line"><input name="Q03L01" type="radio" id="Q03L01_0" value="1" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L01" value="2" id="Q03L01_0" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L01" value="3" id="Q03L01_0" /></td>
+                </tr>
+                <tr class="border-line" id="L_Q03L02">
+                  <td align="left" valign="middle" class="border-line">B) <b>Atividades moderadas</b>, tais como mover uma mesa, passar aspirador de p&oacute;, jogar bola, varrer a casa.</td>
+                  <td align="center" valign="middle" class="border-line"><input name="Q03L02" type="radio" id="Q03L02_0" value="1" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L02" value="2" id="Q03L02_0" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L02" value="3" id="Q03L02_0" /></td>
+                </tr>
+                <tr class="border-line even" id="L_Q03L03">
+                  <td align="left" valign="middle" class="border-line">C) Levantar ou carregar mantimentos.</td>
+                  <td align="center" valign="middle" class="border-line"><input name="Q03L03" type="radio" id="Q03L03_0" value="1" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L03" value="2" id="Q03L03_0" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L03" value="3" id="Q03L03_0" /></td>
+                </tr>
+                <tr class="border-line" id="L_Q03L04">
+                  <td align="left" valign="middle" class="border-line">D) Subir <b>v&aacute;rios</b> lances de escada.</td>
+                  <td align="center" valign="middle" class="border-line"><input name="Q03L04" type="radio" id="Q03L04_0" value="1" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L04" value="2" id="Q03L04_0" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L04" value="3" id="Q03L04_0" /></td>
+
+                </tr>
+                <tr class="border-line even" id="L_Q03L05">
+                  <td align="left" valign="middle" class="border-line">E) Subir <b>um lance</b> de escada.</td>
+                  <td align="center" valign="middle" class="border-line"><input name="Q03L05" type="radio" id="Q03L05_0" value="1" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L05" value="2" id="Q03L05_0" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L05" value="3" id="Q03L05_0" /></td>
+                </tr>
+                <tr class="border-line" id="L_Q03L06">
+                  <td align="left" valign="middle" class="border-line">F) Curvar-se, ajoelhar-se ou dobrar-se.</td>
+                  <td align="center" valign="middle" class="border-line"><input name="Q03L06" type="radio" id="Q03L06_0" value="1" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L06" value="2" id="Q03L06_0" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L06" value="3" id="Q03L06_0" /></td>
+                </tr>
+                <tr class="border-line even" id="L_Q03L07">
+                  <td align="left" valign="middle" class="border-line">G) Andar <b>mais que 1 quil&ocirc;metro.</b></td>
+                  <td align="center" valign="middle" class="border-line"><input name="Q03L07" type="radio" id="Q03L07_0" value="1" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L07" value="2" id="Q03L07_0" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L07" value="3" id="Q03L07_0" /></td>
+                </tr>
+                <tr class="border-line" id="L_Q03L08">
+                  <td align="left" valign="middle" class="border-line">H) andar <b>v&aacute;rios quarteir&otilde;es.</b></td>
+                  <td align="center" valign="middle" class="border-line"><input name="Q03L08" type="radio" id="Q03L08_0" value="1" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L08" value="2" id="Q03L08_0" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L08" value="3" id="Q03L08_0" /></td>
+                </tr>
+                <tr class="border-line even"  id="L_Q03L09">
+                  <td align="left" valign="middle" class="border-line">I) Andar <b>um quarteir&atilde;o.</b></td>
+                  <td align="center" valign="middle" class="border-line"><input name="Q03L09" type="radio" id="Q03L09_0" value="1" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L09" value="2" id="Q03L09_0" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L09" value="3" id="Q03L09_0" /></td>
+                </tr>
+                <tr class="border-line"  id="L_Q03L10">
+                  <td align="left" valign="middle" class="border-line">J) Tomar banho ou vestir-se</td>
+                  <td align="center" valign="middle" class="border-line"><input name="Q03L10" type="radio" id="Q03L10_0" value="1" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L10" value="2" id="Q03L10_0" /></td>
+                  <td align="center" valign="middle" class="border-line"><input type="radio" name="Q03L10" value="3" id="Q03L10_0" /></td>
+                </tr>
+              </table>
+              
+<br />
+              <h2>4. Durante as <span class="rosa">&uacute;ltimas 4 semanas</span>, voc&ecirc; tem alguns dos seguintes problemas com o seu trabalho ou com alguma atividade di&aacute;ria regular, como consequ&ecirc;ncia de sua sa&uacute;de f&iacute;sica</h2>
+              <br />
+              
+              <table width="100%" border="0" cellpadding="6" cellspacing="1">
+                <tr>
+                  <td align="center" valign="middle">&nbsp;</td>
+                  <td width="20%" align="center" valign="middle" class="table-top">SIM</td>
+                  <td width="20%" align="center" valign="middle" class="table-top">N&Atilde;O</td>
+                </tr>
+                <tr class="border-line even" id="L_Q04L01">
+                  <td align="left" valign="middle" class="border-line">A) Voc&ecirc; diminuiu<strong> a quantidade de tempo</strong> que se dedicava ao seu trabalho ou a outras atividades?</td>
+                  <td width="20%" align="center" valign="middle" class="border-line"><input name="Q04L01" type="radio" id="Q04L01_0" value="1" /></td>
+                  <td width="20%" align="center" valign="middle" class="border-line"><input type="radio" name="Q04L01" value="2" id="Q04L01_0" /></td>
+                </tr>
+                <tr class="border-line" id="L_Q04L02">
+                  <td align="left" valign="middle" class="border-line">B) Realizou <strong>menos tarefas</strong> do qeu voc&ecirc; gostaria?</td>
+                  <td width="20%" align="center" valign="middle" class="border-line"><input name="Q04L02" type="radio" id="Q04L02_0" value="1" /></td>
+                  <td width="20%" align="center" valign="middle" class="border-line"><input type="radio" name="Q04L02" value="2" id="Q04L02_0" /></td>
+                </tr>
+                <tr class="border-line even" id="L_Q04L03">
+                  <td align="left" valign="middle" class="border-line">C) Esteve<strong> limitado</strong> no seu tipo de trabalho ou em atividades?</td>
+                  <td width="20%" align="center" valign="middle" class="border-line"><input name="Q04L03" type="radio" id="Q04L03_0" value="1" /></td>
+                  <td width="20%" align="center" valign="middle" class="border-line"><input type="radio" name="Q04L03" value="2" id="Q04L03_0" /></td>
+                </tr>
+                <tr class="border-line" id="L_Q04L04">
+                  <td height="38" align="left" valign="middle" class="border-line">D) Teve<strong> dificuldade</strong> de fazer o seu trabalho ou outras atividades. Por exemplo: Necessitou de um esfor&ccedil;o extra</td>
+                  <td width="20%" align="center" valign="middle" class="border-line"><input name="Q04L04" type="radio" id="Q04L04_0" value="1" /></td>
+                  <td width="20%" align="center" valign="middle" class="border-line"><input type="radio" name="Q04L04" value="2" id="Q04L04_0" /></td>
+                </tr>
+              </table> 
+               
+<br />
+              <h2>5. Durante as <span class="rosa">&uacute;ltimas 4 semanas</span>, voc&ecirc; teve algum dos seguintes problemas com o seu trabalho ou outra atividade di&aacute;ria regular, como consequ&ecirc;ncia de algum problema emocional ( como sentir-se deprimido ou ancioso )?</h2>
+<br />
+              
+              <table width="100%" border="0" cellpadding="6" cellspacing="1">
+              <tr>
+                <td align="center" valign="middle">&nbsp;</td>
+                <td width="20%" align="center" valign="middle" class="table-top">SIM</td>
+                <td width="20%" align="center" valign="middle" class="table-top">N&Atilde;O</td>
+              </tr>
+              <tr class="border-line even" id="L_Q05L01">
+                <td align="left" valign="middle" class="border-line">A) Voc&ecirc; diminuiu<strong> a quantidade de tempo</strong> que se dedicava ao seu trabalho ou a outras atividades?</td>
+                <td width="20%" align="center" valign="middle" class="border-line"><input name="Q05L01" type="radio" id="Q05L01_0" value="1" /></td>
+                <td width="20%" align="center" valign="middle" class="border-line"><input type="radio" name="Q05L01" value="2" id="Q05L01_0" /></td>
+              </tr>
+              <tr class="border-line" id="L_Q05L02">
+                <td align="left" valign="middle" class="border-line">B) Realizou <strong>menos tarefas</strong> do qeu voc&ecirc; gostaria?</td>
+                <td width="20%" align="center" valign="middle" class="border-line"><input name="Q05L02" type="radio" id="Q05L02_0" value="1" /></td>
+                <td width="20%" align="center" valign="middle" class="border-line"><input type="radio" name="Q05L02" value="2" id="Q05L02_0" /></td>
+              </tr>
+              <tr class="border-line even" id="L_Q05L03">
+                <td align="left" valign="middle" class="border-line">C) Não trabalhou ou não fez qualquer das atividades com tanto cudiado como geralmente faz?</td>
+                <td width="20%" align="center" valign="middle" class="border-line"><input name="Q05L03" type="radio" id="Q05L03_0" value="1" /></td>
+                <td width="20%" align="center" valign="middle" class="border-line"><input type="radio" name="Q05L03" value="2" id="Q05L03_0" /></td>
+              </tr>
+            </table>
+                <br />
+			    <h2>6. Durante as <span class="rosa">&uacute;ltimas 4 semanas</span>, de que maneira sua sa&uacute;de f&iacute;sica ou problemas emocionais interfiriram nas suas atividades sociais normais, em rela&ccedil;&atilde;o a fam&iacute;lia, vizinhos, amigos ou em grupo?</h2>
+<br />
+            
+                <table width="100%" border="0" cellpadding="6" cellspacing="1">
+                  <tr class="border-line even" id="L_Q06L01">
+                    <td width="73%" align="left" valign="middle" class="border-line">- de forma nenhuma</td>
+                    <td width="27%" align="center" valign="middle" class="border-line"><input name="Q06L01" type="radio" id="Q06L01_0" value="5" /></td>
+                  </tr>
+                  <tr class="border-line" id="L_Q06L02">
+                    <td align="left" valign="middle" class="border-line">- ligeiramente</td>
+                    <td width="27%" align="center" valign="middle" class="border-line"><input type="radio" name="Q06L01" value="4" id="Q06L01_1" /></td>
+                  </tr>
+                  <tr class="border-line even" id="L_Q06L03">
+                    <td align="left" valign="middle" class="border-line">- moderadamente</td>
+                    <td width="27%" align="center" valign="middle" class="border-line"><input type="radio" name="Q06L01" value="3" id="Q06L01_2" /></td>
+                  </tr>
+                  <tr class="border-line" id="L_Q06L04">
+                    <td align="left" valign="middle" class="border-line">- bastante</td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q06L01" value="2" id="Q06L01_3" /></td>
+                  </tr>
+                  <tr class="border-line even" id="L_Q06L05">
+                    <td align="left" valign="middle" class="border-line">- extremamente</td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q06L01" value="1" id="Q06L01_4" /></td>
+                  </tr>
+                </table>
+                <h3>&nbsp;</h3>
+          <h2> 7. Quanto a dor no corpo voc&ecirc; teve nas <span class="rosa">&uacute;ltimas 4 semanas</span>?</h2>
+                <br />
+                <table width="100%" border="0" cellpadding="6" cellspacing="1">
+                  <tr class="border-line even" id="L_Q07L01">
+                    <td width="73%" align="left" valign="middle" class="border-line">- nenhuma</td>
+                    <td width="27%" align="center" valign="middle" class="border-line"><input name="Q07L01" type="radio" id="Q07L01_0" value="6.0" /></td>
+                  </tr>
+                  <tr class="border-line" id="L_Q07L02">
+                    <td align="left" valign="middle" class="border-line">- muito leve</td>
+                    <td width="27%" align="center" valign="middle" class="border-line"><input type="radio" name="Q07L01" value="5.4" id="Q07L01_1" /></td>
+                  </tr>
+                  <tr class="border-line even" id="L_Q07L03">
+                    <td align="left" valign="middle" class="border-line">- leve</td>
+                    <td width="27%" align="center" valign="middle" class="border-line"><input type="radio" name="Q07L01" value="4.2" id="Q07L01_2" /></td>
+                  </tr>
+                  <tr class="border-line" id="L_Q07L04">
+                    <td align="left" valign="middle" class="border-line">- moderada</td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q07L01" value="3.1" id="Q07L01_3" /></td>
+                  </tr>
+                  <tr class="border-line even" id="L_Q07L05">
+                    <td align="left" valign="middle" class="border-line">- grave</td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q07L01" value="2.2" id="Q07L01_4" /></td>
+                  </tr>
+                  <tr class="border-line">
+                    <td align="left" valign="middle" class="border-line">- muito grave</td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q07L01" value="1.0" id="Q07L01_5" /></td>
+                  </tr>
+                </table>
+          <br />
+          <h2> 8. Durante as <span class="rosa">&uacute;ltimas 4 semanas</span>, quanto a dor interferiu com o seu trabalho normal ( incluindo tanto o trabalho fora de casa e dentro de casa )?</h2>
+<br />
+<table width="100%" border="0" cellpadding="6" cellspacing="1">
+  <tr class="border-line even" id="L_Q08L01">
+    <td width="73%" align="left" valign="middle" class="border-line">- de maneira alguma</td>
+    <td width="27%" align="center" valign="middle" class="border-line"><input name="Q08L01" type="radio" id="Q08L01_0" value="1" /></td>
+  </tr>
+  <tr class="border-line" id="L_Q08L01">
+    <td align="left" valign="middle" class="border-line">- um pouco</td>
+    <td width="27%" align="center" valign="middle" class="border-line"><input type="radio" name="Q08L01" value="2" id="Q08L01_1" /></td>
+  </tr>
+  <tr class="border-line even" id="L_Q08L01">
+    <td align="left" valign="middle" class="border-line">- moderadamente</td>
+    <td width="27%" align="center" valign="middle" class="border-line"><input type="radio" name="Q08L01" value="3" id="Q08L01_2" /></td>
+  </tr>
+  <tr class="border-line" id="L_Q08L01">
+    <td align="left" valign="middle" class="border-line">- bastante</td>
+    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q08L01" value="4" id="Q08L01_3" /></td>
+  </tr>
+  <tr class="border-line even" id="L_Q08L01">
+    <td align="left" valign="middle" class="border-line">- extremamente</td>
+    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q08L01" value="5" id="Q08L01_4" /></td>
+  </tr>
+</table>
+<br />
+                <h2>9. Estas quest&otilde;es s&atilde;o sobre como voc&ecirc; se sente e como tudo tem acontecido com voc&ecirc; durante as <span class="rosa">&uacute;ltimas 4 semanas.</span> Para cada quest&atilde;o, por favor d&ecirc; uma resposta que mais se aproxime da maneira como voc&ecirc; se sente. Em rela&ccedil;&atilde;o<span class="rosa"> as &uacute;ltimas 4 semanas.</span></h2>
+    <br />
+                <table width="100%" border="0" cellpadding="6" cellspacing="1">
+                  <tr>
+                    <td width="33%"></td>
+                    <td width="11%" align="center" valign="middle" class="table-top">Todo tempo</td>
+                    <td width="11%" align="center" valign="middle" class="table-top">A maior parte do tempo</td>
+                    <td width="11%" align="center" valign="middle" class="table-top">Uma boa parte do tempo</td>
+                    <td width="10%" align="center" valign="middle" class="table-top">Alguma parte do tempo</td>
+                    <td width="13%" align="center" valign="middle" class="table-top">Uma pequena parte do tempo</td>
+                    <td width="11%" align="center" valign="middle" class="table-top">Nunca</td>
+                  </tr>
+                  <tr class="border-line even" id="L_Q09L01">
+                    <td class="border-line">A) Quanto tempo voc&ecirc; tem se sentido cheio de vigor, cheio de vontade e cheio de for&ccedil;a?</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q09L01" type="radio" id="Q09L01_0" value="1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L01" value="2" id="Q09L01_1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L01" value="3" id="Q09L01_2" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L01" value="4" id="Q09L01_3" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L01" value="5" id="Q09L01_4" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L01" value="6" id="Q09L01_5" /></td>
+                  </tr>
+                  <tr class="border-line" id="L_Q09L02">
+                    <td class="border-line">B) Quanto tempo voc&ecirc; tem se sentido uma pessoa muito nervosa?</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q09L02" type="radio" id="Q09L02_0" value="1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L02" value="2" id="Q09L02_1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L02" value="3" id="Q09L02_2" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L02" value="4" id="Q09L02_3" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L02" value="5" id="Q09L02_4" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L02" value="6" id="Q09L02_5" /></td>
+                  </tr>
+                  <tr class="border-line even" id="L_Q09L03">
+                    <td class="border-line">C) Quanto tempo voc&ecirc; tem se sentido t&atilde;o deprimido que nada pode anim&aacute;-lo?</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q09L03" type="radio" id="Q09L03_0" value="1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L03" value="2" id="Q09L03_1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L03" value="3" id="Q09L03_2" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L03" value="4" id="Q09L03_3" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L03" value="5" id="Q09L03_4" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L03" value="6" id="Q09L03_5" /></td>
+                  </tr>
+                  <tr class="border-line" id="L_Q09L04">
+                    <td class="border-line">D) Quanto tempo voc&ecirc; tem se sentido calmo ou tranquilo?</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q09L04" type="radio" id="Q09L04_0" value="1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L04" value="2" id="Q09L04_1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L04" value="3" id="Q09L04_2" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L04" value="4" id="Q09L04_3" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L04" value="5" id="Q09L04_4" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L04" value="6" id="Q09L04_5" /></td>
+                  </tr>
+                  <tr class="border-line even" id="L_Q09L05">
+                    <td class="border-line">E) Quanto tempo voc&ecirc; tem se sentido com muita energia?</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q09L05" type="radio" id="Q09L05_0" value="1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L05" value="2" id="Q09L05_1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L05" value="3" id="Q09L05_2" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L05" value="4" id="Q09L05_3" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L05" value="5" id="Q09L05_4" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L05" value="6" id="Q09L05_5" /></td>
+                  </tr>
+                  <tr class="border-line" id="L_Q09L06">
+                    <td class="border-line">F) Quanto tempo voc&ecirc; tem se sentido desanimado e abatido?</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q09L06" type="radio" id="Q09L06_0" value="1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L06" value="2" id="Q09L06_1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L06" value="3" id="Q09L06_2" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L06" value="4" id="Q09L06_3" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L06" value="5" id="Q09L06_4" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L06" value="6" id="Q09L06_5" /></td>
+                  </tr>
+                  <tr class="border-line even" id="L_Q09L07">
+                    <td class="border-line">G) Quanto tempo voc&ecirc; tem se sentido esgotado</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q09L07" type="radio" id="Q09L07_0" value="1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L07" value="2" id="Q09L07_1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L07" value="3" id="Q09L07_2" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L07" value="4" id="Q09L07_3" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L07" value="5" id="Q09L07_4" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L07" value="6" id="Q09L07_5" /></td>
+                  </tr>
+                  <tr class="border-line" id="L_Q09L08">
+                    <td class="border-line">H) Quanto tempo voc&ecirc; tem se sentido uma pessoa feliz?</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q09L08" type="radio" id="Q09L08_0" value="1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L08" value="2" id="Q09L08_1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L08" value="3" id="Q09L08_2" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L08" value="4" id="Q09L08_3" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L08" value="5" id="Q09L08_4" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L08" value="6" id="Q09L08_5" /></td>
+                  </tr>
+                  <tr class="border-line even" id="L_Q09L09">
+                    <td class="border-line">I) Quanto tempo voc&ecirc; tem se sentido cansado</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q09L09" type="radio" id="Q09L09_0" value="1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L09" value="2" id="Q09L09_1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L09" value="3" id="Q09L09_2" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L09" value="4" id="Q09L09_3" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L09" value="5" id="Q09L09_4" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q09L09" value="6" id="Q09L09_5" /></td>
+                  </tr>
+                </table>
+          <br />
+          <h2> 10. Durante <span class="rosa">as &uacute;ltimas 4 semanas</span>, quanto do seu tempo a sua sa&uacute;de f&iacute;sica ou problemas emocionais interferiram com as suas atividades sociais (como visitar amigos, parentes, etc) ?</h2>
+<br />
+                <table width="100%" border="0" cellpadding="6" cellspacing="1">
+                  <tr class="border-line even" id="L_Q10L01">
+                    <td width="73%" align="left" valign="middle" class="border-line">- todo tempo</td>
+                    <td width="27%" align="center" valign="middle" class="border-line"><input name="Q10L01" type="radio" id="Q10L01_0" value="1" /></td>
+                  </tr>
+                  <tr class="border-line" id="L_Q10L01">
+                    <td align="left" valign="middle" class="border-line">- a maior parte do tempo</td>
+                    <td width="27%" align="center" valign="middle" class="border-line"><input type="radio" name="Q10L01" value="2" id="Q10L01_1" /></td>
+                  </tr>
+                  <tr class="border-line even" id="L_Q10L01">
+                    <td align="left" valign="middle" class="border-line">- alguma parte do tempo</td>
+                    <td width="27%" align="center" valign="middle" class="border-line"><input type="radio" name="Q10L01" value="3" id="Q10L01_2" /></td>
+                  </tr>
+                  <tr class="border-line" id="L_Q10L01">
+                    <td align="left" valign="middle" class="border-line">- uma pequena parte do tempo</td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q10L01" value="4" id="Q10L01_3" /></td>
+                  </tr>
+                  <tr class="border-line even" id="L_Q10L01">
+                    <td align="left" valign="middle" class="border-line">- nenhuma parte do tempo</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q10L01" type="radio" id="Q10L01_4" value="5" /></td>
+                  </tr>
+          </table>
+<br />
+                <h2> 11. O quanto <span class="rosa">verdadeiro</span> ou <span class="rosa">falso</span> &eacute; cada uma das afirma&ccedil;&otilde;es para voc&ecirc;?</h2>
+                <br />
+          <table width="100%" border="0" cellpadding="6" cellspacing="1">
+                  <tr>
+                    <td width="33%"></td>
+                    <td width="11%" align="center" valign="middle" class="table-top">Definitivamente verdadeiro</td>
+                    <td width="11%" align="center" valign="middle" class="table-top">A maioria das vezes verdadeiro</td>
+                    <td width="11%" align="center" valign="middle" class="table-top">N&atilde;o sei</td>
+                    <td width="10%" align="center" valign="middle" class="table-top">A maioria das vezes falsa</td>
+                    <td width="13%" align="center" valign="middle" class="table-top">Definitivamente falsa</td>
+                  </tr>
+                  <tr class="border-line even" id="L_Q11L01">
+                    <td class="border-line">A) Eu costumo adoecer um pouco mais facilmente que as outras pessoas</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q11L01" type="radio" id="Q11L01_0" value="1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L01" value="2" id="Q11L01_1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L01" value="3" id="Q11L01_2" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L01" value="4" id="Q11L01_3" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L01" value="5" id="Q11L01_4" /></td>
+                  </tr>
+                  <tr class="border-line" id="L_Q11L02">
+                    <td class="border-line">B) Eu sou t&atilde;o saud&aacute;vel quanto qualquer outra pessoa que eu conhe&ccedil;o</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q11L02" type="radio" id="Q11L02_0" value="1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L02" value="2" id="Q11L02_1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L02" value="3" id="Q11L02_2" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L02" value="4" id="Q11L02_3" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L02" value="5" id="Q11L02_4" /></td>
+                  </tr>
+                  <tr class="border-line even" id="L_Q11L03">
+                    <td class="border-line">C) Eu acho que a minha sa&uacute;de vai piorar</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q11L03" type="radio" id="Q11L03_0" value="1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L03" value="2" id="Q11L03_1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L03" value="3" id="Q11L03_2" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L03" value="4" id="Q11L03_3" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L03" value="5" id="Q11L03_4" /></td>
+                  </tr>
+                  <tr class="border-line" id="L_Q11L04">
+                    <td class="border-line">D) Minha sa&uacute;de &eacute; excelente</td>
+                    <td align="center" valign="middle" class="border-line"><input name="Q11L04" type="radio" id="Q11L04_0" value="1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L04" value="2" id="Q11L04_1" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L04" value="3" id="Q11L04_2" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L04" value="4" id="Q11L04_3" /></td>
+                    <td align="center" valign="middle" class="border-line"><input type="radio" name="Q11L04" value="5" id="Q11L04_4" /></td>
+                  </tr>
+          </table>
+          <br />
+        <a href="javascript:void(0);" onclick="exe_system();" class="botao">ENVIAR</a> 
+        <a href="javascript:void(0);" onclick="resetar();" class="botao">RESETAR</a> 
+        </form>
+
+    </div>
+    
+    
+    <div id="resultado">
+    	<div class="title">RESULTADOS OBTIDOS</div>
+        <div id="result_get">
+        	<div style="padding: 10px 0 10px 0; border-bottom: 1px solid #EEE;">
+                <span class="sub_title" id="div_capacidade"></span>
+            </div>
+            
+        	<div style="padding: 10px 0 10px 0; border-bottom: 1px solid #EEE;">
+                <span class="sub_title" id="div_limitacao"></span>
+            </div>
+            
+        	<div style="padding: 10px 0 10px 0; border-bottom: 1px solid #EEE;">          
+                <span class="sub_title" id="div_dor"></span>
+            </div>
+            
+            <div style="padding: 10px 0 10px 0; border-bottom: 1px solid #EEE;">
+                <span class="sub_title" id="div_estado"></span>
+            </div>
+            
+            <div style="padding: 10px 0 10px 0; border-bottom: 1px solid #EEE;">
+                <span class="sub_title" id="div_vitalidade"></span>
+            </div>
+            
+            <div style="padding: 10px 0 10px 0; border-bottom: 1px solid #EEE;">
+                <span class="sub_title" id="div_aspectos"></span>
+            </div>
+            
+            <div style="padding: 10px 0 10px 0; border-bottom: 1px solid #EEE;">
+                <span class="sub_title" id="div_limitacao2"></span>
+            </div>
+            
+            <div style="padding: 10px 0 10px 0; border-bottom: 1px solid #EEE;">
+                <span class="sub_title" id="div_saude"></span>
+            </div>
+            
+            
+            <br />
+            <a href="javascript:void(0);" onclick="voltar();" class="botao">VOLTAR AO FORMULÁRIO</a>
+        </div>
+    </div>
+    
+        
+    <div id="copyright">Sistema desenvolvido por <b>William Castro</b></div>
+</div>
+</body>
+</html>

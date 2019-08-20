@@ -1,0 +1,139 @@
+/*
+Sistema desenvolvido por William Castro
+Email para contato: williamccoelhO@gmail.com
+*/
+
+* {
+	font-family: Arial;
+	font-size: 11px;
+}
+#pagina {
+	width: 800px;
+	margin: 0 auto;
+}
+.table-top {
+	background: #555;
+	color: #FFF;
+	border-left: 1px solid #222;
+	border-bottom: 1px solid #222;
+}
+
+.border-line {
+	border-left: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+}
+
+.border-table {
+	border: 1px solid #DDD;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: -2px;
+	font-size: 23px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #444;
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #F03;
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: -2px;
+	color: #F03;
+	margin: 0;
+	padding: 0;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.active {
+	background: #F5967A;
+}
+
+.linha_h {
+	background: #f5e1e1;
+}
+
+.even {
+	background: #EEEEEE;
+}
+
+#resultado{
+	display: none;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 28px;
+	letter-spacing: -2px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #F03;
+}
+
+.sub_title {
+	font-weight: bold;
+	font-size: 21px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+.t_result {
+	font-weight: 100;
+	font-size: 21px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #F00;
+}
+
+.botao {
+	padding: 10px;
+	background: #000;
+	float: left;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 23px;
+	letter-spacing: -2px;
+	text-decoration: none;
+	margin: 0 5px 20px 0;
+}
+.botao:hover {
+	background: #222;
+}
+
+#copyright {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 11px;
+	color: #666;
+	float: left;
+	width: 100%;
+	text-align: right;
+	margin: 0 0 10px 0;
+}
+
+.rosa {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	color: #F03;
+}
